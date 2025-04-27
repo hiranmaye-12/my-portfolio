@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background-color: #00BFA6; /* Beautiful Teal Blue */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #00BFA6; /* Beautiful Teal Blue */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.buy-button, .like-button {
+  background-color: #00BFA6; /* Beautiful Teal Blue */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.buy-button:hover, .like-button:hover {
+  background-color: #00796B; /* Darker Teal for hover */
+}
